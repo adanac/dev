@@ -2,14 +2,17 @@
 layout: default
 title: 你好，世界
 ---
-
-　　<h2>{{ page.title }}</h2>
-
-　　<p>我的第一篇文章</p>
-
-<h3>create dev by jekyll</h3>
+<h2>{{ page.title }}</h2>
+<p>我的第一篇文章</p>
+<h2>create dev by jekyll</h2>
 <ul>
-	<li>mkdir dev</li>
+	<li>新建根目录：mkdir dev</li>
+	<li>切换到目录：cd dev</li>
+	<li>git初始化：git init</li>
+	<li>创建无父节点分支gh-pages：git checkout --orphan gh-pages</li>
+	<li>创建配置文件：vi _config.yml，内容为：baseurl: /dev</li>
+	<li>创建模板文件：mkdir _layouts，进入该目录，创建一个default.html文件，作为Blog的默认模板</li>
+	<li>创建文章：mkdir _post，进入该目录，创建文章即可。</li>
 </ul>
 
 　　<p>{{ page.date | date_to_string }}</p>
