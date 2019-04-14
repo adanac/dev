@@ -13,6 +13,12 @@ title: 你好，世界
 	<li>创建配置文件：vi _config.yml，内容为：baseurl: /dev</li>
 	<li>创建模板文件：mkdir _layouts，进入该目录，创建一个default.html文件，作为Blog的默认模板</li>
 	<li>创建文章：mkdir _post，进入该目录，创建文章即可。</li>
+	<li>创建首页：回到根目录，创建一个index.html文件</li>
+	<li>添加发布内容：git add .</li>
+	<li>提交发布内容：git commit -m"u";</li>
+	<li>登录github网站，创建一个名为dev的库</li>
+	<li>将发布内容推送到github刚创建的库：git remote add origin https://github.com/adanac/jekyll_demo.git</li>
+	<li>推送内容：git push origin gh-pages </li>
 </ul>
 
 　　<p>{{ page.date | date_to_string }}</p>
